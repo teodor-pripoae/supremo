@@ -1,0 +1,16 @@
+{
+  "name": "supremo",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.10.0",
+    "mocha": "~1.17.1",
+    "chai": "~1.9.0",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-mocha-phantomjs": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "node-inspector": "~0.7.0-2",
+    "underscore": "~1.5.2",
+    "jquery": "~2.1.0"
+  }
+}

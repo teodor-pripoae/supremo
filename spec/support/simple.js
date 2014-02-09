@@ -1,0 +1,1 @@
+App.Answer = 42;
