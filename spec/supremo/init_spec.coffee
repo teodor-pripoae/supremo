@@ -36,3 +36,10 @@ describe 'Supremo', ->
             url: "../support/multiple_level.js"
       window.App = Supremo.init(data)
       window.App.Multiple.Level().should.equal(42 + 10 + 20)
+    it "works with closures", ->
+      data =
+        Views:
+          Closured:
+            url: "../support/closured.js"
+      window.App = Supremo.init(data)
+      window.App.Views.Closured().should.equal(422)
