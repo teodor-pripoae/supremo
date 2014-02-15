@@ -36,6 +36,7 @@ Supremo.init({
         }
     }
 })
+```
 
 ### Contributing
 
