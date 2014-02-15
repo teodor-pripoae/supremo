@@ -3,7 +3,7 @@ window.Supremo =
     new Supremo.Setter(options)
 
   Setter: (options) ->
-    self = @
+    self = {}
     _.each options, (value, key) ->
       if _.isString(value.url)
         akey = "__#{key}"
@@ -23,6 +23,7 @@ window.Supremo =
           console.log("Setting value to #{setv}")
       else
         self[key] = Supremo.init(value)
+    self
   Getter: (options) ->
     self = @
     _.each options, (value, key) ->
