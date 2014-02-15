@@ -11,6 +11,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "node-inspector": "~0.7.0-2",
     "underscore": "~1.5.2",
-    "jquery": "~2.1.0"
+    "jquery": "~2.1.0",
+    "norman": "~0.1.0"
   }
 }
