@@ -5,6 +5,9 @@ window.Supremo =
   Setter: (options) ->
     self = {}
     _.each options, (value, key) ->
+      if _.isString(value)
+        value = {url: value}
+
       if _.isString(value.url)
         akey = "__#{key}"
         self[akey] = new Supremo.Getter(value)

@@ -43,3 +43,10 @@ describe 'Supremo', ->
             url: "../support/closured.js"
       window.App = Supremo.init(data)
       window.App.Views.Closured().should.equal(422)
+
+    it "works without string instead of hash", ->
+      data =
+        Answer: "../support/simple.js"
+        Complex: "../support/complex.js"
+      window.App = Supremo.init(data)
+      window.App.Complex().should.equal(42 + 10)
