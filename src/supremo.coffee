@@ -14,13 +14,10 @@ window.Supremo =
             v.download()
             return self[akey]
           else
-            console.log("Current value is #{self[akey]}")
             return self[akey];
 
         self.__defineSetter__ key, (setv) ->
-          console.log("Current value is #{self[akey]}")
           self[akey] = setv
-          console.log("Setting value to #{setv}")
       else
         self[key] = Supremo.init(value)
     self
