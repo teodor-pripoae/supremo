@@ -50,3 +50,9 @@ describe 'Supremo', ->
         Complex: "../support/complex.js"
       window.App = Supremo.init(data)
       window.App.Complex().should.equal(42 + 10)
+
+    it "works with string variables", ->
+      data =
+        "comments/index": "../support/jst.js"
+      window.JST = Supremo.init(data)
+      window.JST["comments/index"]().should.equal("something")
