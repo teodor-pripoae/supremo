@@ -44,7 +44,7 @@ describe 'Supremo', ->
       window.App = Supremo.init(data)
       window.App.Views.Closured().should.equal(422)
 
-    it "works without string instead of hash", ->
+    it "works with string instead of hash", ->
       data =
         Answer: "../support/simple.js"
         Complex: "../support/complex.js"
